@@ -75,7 +75,7 @@
         <li style="font-size: 20px;"><a href="#" data-beloworigin="true" data-activates="comunicados" class="white-text dropdown-button"><i class="material-icons white-text">description</i> Comunicado <i class="material-icons white-text right">chevron_right</i></a></li>
         <li style="font-size: 20px;" title="{{ session('email_gerente')['nome'] }}"><a href="{{ route('sair') }}" class="white-text"><i class="material-icons white-text">exit_to_app</i> Terminar Sessão <i class="material-icons white-text right">chevron_right</i></a></li>
     </ul>
-    
+
     <div class="row">
         <a href="#" title="Menu" data-activates="slide-out" style="background: rgb(255, 102, 0);" class="btn btn-large btn-floating button-collapse"><i class="material-icons">menu</i></a>
         <div class="container balanco">
@@ -261,7 +261,7 @@
                     <form action="{{ route('consultar_vendas') }}" method="post">
                         @csrf
                         <div class="input-field m6">
-                            <input type="date" title="Escolha uma data para consultar vendas" name="vendas_pesq" id="pesquisar" class="white-text" required style="border-radius: 10px; background: rgb(255, 102, 0);"> 
+                            <input type="date" title="Escolha uma data para consultar vendas" name="vendas_pesq" id="pesquisar" class="white-text" required style="border-radius: 10px; background: rgb(255, 102, 0);">
                         </div>
                         <div class="input-field m6">
                             <button type="submit" title="Consultar Vendas" class="btn btn-floating green waves-effect">
@@ -288,7 +288,7 @@
                     <form action="{{ route('consultar_compra') }}" method="post">
                         @csrf
                         <div class="input-field m6">
-                            <input type="date" title="Escolha uma data para consultar compras" name="compra_pesq" id="pesquisar" class="white-text" required style="border-radius: 10px; background: rgb(255, 102, 0);"> 
+                            <input type="date" title="Escolha uma data para consultar compras" name="compra_pesq" id="pesquisar" class="white-text" required style="border-radius: 10px; background: rgb(255, 102, 0);">
                         </div>
                         <div class="input-field m6">
                             <button type="submit" title="Consultar Compras" class="btn btn-floating green waves-effect">
@@ -314,6 +314,6 @@
             toastr.success("{{ Session::get('message') }}",{timeOut: 1000});
         </script>
     @endif
-    
+
 </body>
 </html>
